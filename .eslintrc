@@ -1,0 +1,115 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {},
+  "rules": {
+    "eqeqeq": [
+      "warn",
+      "always"
+    ], // === and !==
+    "curly": [
+      "warn",
+      "all"
+    ], // { } on 1-line statements (if, while, for, etc)
+    "radix": [
+      "warn",
+      "always"
+    ], // parseInt("123", 10)
+    "no-unused-vars": [
+      "warn",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "eol-last": [
+      "warn",
+      "always"
+    ], // \n at last line of file
+    "indent": "off", // off -> não força um estilo de identação padrão
+    "no-else-return": "warn", // não aceita else return depois de um if return
+    "padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }, // \n antes de return
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": "directive",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "directive",
+        "next": "directive"
+      }
+    ],
+    "prefer-const": "warn",
+    "quotes": [
+      "warn",
+      "single"
+    ], // "'
+    "semi": [
+      "warn",
+      "always"
+    ], // ponto e vírgula
+    "block-scoped-var": 2,
+    "camelcase": "warn",
+    "computed-property-spacing": [
+      "warn",
+      "never"
+    ],
+    "max-depth": [
+      "warn",
+      4
+    ],
+    "max-len": [
+      "warn",
+      650
+    ],
+    "max-statements": [
+      "warn",
+      17
+    ],
+    "no-extend-native": "warn",
+    "no-mixed-spaces-and-tabs": "warn",
+    "no-trailing-spaces": "error",
+    "no-use-before-define": [
+      "warn",
+      "nofunc"
+    ],
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "keyword-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "space-unary-ops": "warn"
+  }
+}
