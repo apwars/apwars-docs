@@ -119,10 +119,6 @@ export default {
       APWars,
       menu: [
         {
-          label: this.$t('footer.documentation'),
-          to: 'https://docs.apwars.farm/',
-        },
-        {
           label: this.$t('market'),
           to: 'https://app.apwars.farm/',
         },

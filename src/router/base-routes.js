@@ -1,4 +1,3 @@
-import Landing from 'Views/Landing';
 import Docs from 'Views/Docs/Docs';
 import BlackMarket from 'Views/Docs/BlackMarket';
 import GlobalEvents from 'Views/Docs/GlobalEvents';
@@ -47,16 +46,6 @@ import Guardians from 'Views/Docs/Guardians';
 const routes = [
   {
     path: '/',
-    name: 'Landing',
-    component: Landing,
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Landing,
-  },
-  {
-    path: '/docs',
     name: 'Docs',
     component: Docs,
     children: [

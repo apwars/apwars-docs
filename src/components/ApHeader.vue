@@ -3,7 +3,7 @@
     <v-navigation-drawer v-model="drawer" app temporary color="#32211B">
       <v-list class="d-flex flex-column justify-center align-center" dense nav>
         <v-img :src="LogoAP" height="35" contain></v-img>
-        <!-- <v-list-item v-for="(item, i) in links" :key="i" link>
+        <v-list-item v-for="(item, i) in links" :key="i" link>
           <v-list-item-content style="margin-top: 10px;">
             <button
               @click="links[i].newTab ? openNewTab(links[i].route) : $router.push(links[i].route)"
@@ -15,7 +15,7 @@
               >
             </button>
           </v-list-item-content>
-        </v-list-item> -->
+        </v-list-item>
         <a href="https://app.apwars.farm/" class="mt-3">
           <button>
             <v-img
@@ -108,11 +108,6 @@ export default {
         {
           title: this.$t('wars'),
           route: 'https://app.apwars.farm/wars',
-        },
-        {
-          title: 'Docs',
-          route: 'https://apwars.farm/docs',
-          isDocs: this.$route.path === '/docs' ? true : false,
         },
       ],
     };
