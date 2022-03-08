@@ -94,20 +94,12 @@ export default {
       GoToApp,
       links: [
         {
-          title: this.$t('Farms'),
-          route: 'https://farms.apwars.farm/?showFarms=true',
-        },
-        {
-          title: this.$t('Buy wGOLD'),
-          route: 'https://exchange.apwars.farm/#/swap',
-        },
-        {
           title: this.$t('market'),
           route: 'https://app.apwars.farm/black-market',
         },
         {
           title: this.$t('wars'),
-          route: 'https://app.apwars.farm/wars',
+          route: 'https://app.apwars.farm/war/intro',
         },
       ],
     };
